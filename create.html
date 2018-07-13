@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Create an Account</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<header>
+	 <div class="container">
+      <div id= "branding">
+        <h1> My Diary</h1>
+      </div>
+  <nav>
+   <ul>
+  <li><a href="login.html">Login</a></li> 
+  <li><a href="create.html">Register</a></li>
+  </ul>
+  </nav>    
+</div>
+</header>
+
+<section class="container">
+ <h1>Register to My-Diary</h1>
+ <div class="line"></div>
+ <h5>Create your own diary</h5>
+ </div>
+
+ 	 <div class="row">
+   <div class="col-lg-8 borderleft">
+   <h3>Diary Register</h3>
+   <p>Your verification code will be sent via email, so the email entered will have to be valid.</p>
+   <form action="/create/" method='post' name='create' class='form_class'>
+   <div class="row">
+   <div class="col-lg-3">
+   
+   <label for="Email">Email</label>
+   </div> <div class="col-lg-9">
+   <input type='email' name='email' value="" size='30' class='form-control' required>
+   </div></div>
+   <input type=hidden name=action value=create>
+   <div class="row"> <button type="submit" class="btn btn-default"><a href = "register.html"</i> Create diary</button></div> 
+    <a href="login.html"> Already registered? <br>Log in!</a></div> </div> 
+    </div>
+   </div> 
+   <small>Please note that no password is used yet. It will be created when your email-address is verified.<br>
+   Read our <a href="about.html">privacy policy</a>
+   </small>
+</section>
+</body>
+</html>
