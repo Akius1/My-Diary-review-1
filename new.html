@@ -1,16 +1,18 @@
 <html lang="en">
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Write new Entry</title>
   <link rel="stylesheet"  href="./css/style.css">
+
 </head>
-<body class="page">
+<body >
  <header> 
  	<div class = "container">
     <div id= "branding">
-        <h1><span class="highlight"> My </span> Diary</h1>
+        <img src="./img/logo.JPEG" width ="50" height="50"/><h1><span class="highlight"> My </span> Diary</h1>
       </div>
     <nav>
      <ul>
@@ -24,46 +26,51 @@
      </div>
 
 </header>
+<section id ="newsletter">
+        <div class = "container">
+          <h1> Subscribe To Our Newsletter</h1>
+          <form>
+            <input type="email" placeholder="Enter Email....">
+            <button type="submit" class = "button_1">Subscribe</button>
+          </form>
+</section>
 
-<main class="container">
+
+<section id="main">
+<div class="container">
    <div>   
   <ul>
-   <li><h1>Welcome<h1></li> 
-   <li>What is on Your Mind</li>
+   <li><h1>Welcome! What is on Your Mind.<h1></li> 
+   <li> <h3>New diary entry</h3></li>
   </ul>
  </div> 
- <h1>New diary entry</h1>
- <div>
- <h5>Add new entry in your diary</h5>
-</div>
-    
-<div>
+<div class="back_home">
     <a href='index.html' class='style_button_d'> Back to index</a>
-</div>   
-
-    
-<div>
+</div>  
+ <div class= "new">
+ <h5>Add new entry in your diary</h5>
+ <div>
    <p>After writing in the diary, press "Save entry" on the bottom to save the entry.
    If you don't enter anything in the 'Date'-field, the current date will be displayed.
  </p>
  </div>
  <div>
-  <form action="?i=944213" method='post' class='form_class'>
-    <table class='table mt2 table_borderless'>
+  <form>
+    <table>
     <tr>
     <td>Date</td>
-    <td><input type="text" name="udato" id="udato" autocomplete="off" value="" /><br><small>(yyyy-mm-dd hh:mm:ss)</small></td>
+    <td><input type="text" name="udato" id="udato" autocomplete="on" value="" /><br><small>(yyyy-mm-dd hh:mm:ss)</small></td>
     </tr>   
     <tr>
     <td>Title</td>
     <td><input type=text name=etitle maxlength=200 id=etitle value="" autofocus>
-    <input id='savebutton1' type='submit' name='save' value="Save entry" class='btn btn-default'>
+    <input id='savebutton1' type='submit' name='save' value="Save entry">
     </td>
     </tr>
- <tr>
+    <tr>
      <td>Entry </td>
      <td>
-  <textarea name='entry' id='entry' rows='10' wrap='soft' required class='form-control' style='width:99%;'></textarea>
+  <textarea name='entry' id='entry' rows='10' wrap='soft' required  style='width:99%;'></textarea>
   </td>
     </tr>
    <tr>
@@ -76,8 +83,12 @@
   </tr>
   </table>
   </form>
-  </div>
- </main>
+</div>
+ </section>
+
+ <footer>
+<p> My Diary, Copyright &copy; 2018<p>
+ </footer>
 
 
 </body>
