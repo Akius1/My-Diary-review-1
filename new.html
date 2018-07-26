@@ -12,12 +12,12 @@
  <header> 
  	<div class = "container">
     <div id= "branding">
-        <img src="./img/logo.JPEG" width ="50" height="50"/><h1><span class="highlight"> My </span> Diary</h1>
+       <h1><span class="highlight"> My </span> Diary</h1>
       </div>
     <nav>
      <ul>
       <li><a href="view.html">My entries</a></li> 
-      <li><a href="new.html">Write new entry</a></li>
+      <li class="current"><a href="new.html">Write new entry</a></li>
       <li><a href="account.html"></i>Account</a></li>
       <li><a href="content.html">History</a></li>
       <li><a href="login.html">Logout</a></li>
@@ -26,14 +26,7 @@
      </div>
 
 </header>
-<section id ="newsletter">
-        <div class = "container">
-          <h1> Subscribe To Our Newsletter</h1>
-          <form>
-            <input type="email" placeholder="Enter Email....">
-            <button type="submit" class = "button_1">Subscribe</button>
-          </form>
-</section>
+
 
 
 <section id="main">
@@ -64,20 +57,19 @@
     <tr>
     <td>Title</td>
     <td><input type=text name=etitle maxlength=200 id=etitle value="" autofocus>
-    <input id='savebutton1' type='submit' name='save' value="Save entry">
     </td>
     </tr>
     <tr>
      <td>Entry </td>
      <td>
-  <textarea name='entry' id='entry' rows='10' wrap='soft' required  style='width:99%;'></textarea>
+  <textarea name='entry' id='input' rows='10' wrap='soft' required  style='width:99%;'></textarea>
   </td>
     </tr>
    <tr>
    <td></td>
    <td>
     <input type=hidden name=action value=post_new><p>
-    <input type=hidden name=tkey value=dkenab>
+    
     <input id='savebutton2' type='submit' name='save' value="Save entry" class='btn btn-default'>
    </td></tr><tr>
   </tr>
@@ -85,7 +77,7 @@
   </form>
 </div>
  </section>
-
+ 
  <footer>
 <p> My Diary, Copyright &copy; 2018<p>
  </footer>
