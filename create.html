@@ -10,66 +10,70 @@
 	<header>
 	 <div class="container">
       <div id= "branding">
-        <img src="./img/logo.JPEG" width ="50" height="50"/><h1><span class="highlight"> My </span> Diary</h1>
-
+        <h1><span class="highlight"> My </span> Diary</h1>
       </div>
   <nav>
    <ul>
   <li><a href="login.html">Login</a></li> 
-  <li><a href="create.html">Register</a></li>
+  <li class= "current"><a href="create.html">Register</a></li>
   </ul>
   </nav>    
 </div>
 </header>
 
-<section id="main-col">
- <h1>Register to My-Diary</h1>
- <div class="container"></div>
- <h5>Create your own diary</h5>
- <form>
- <div class = "register">
- <div class = "Fname">
- <label>First Name</label>
-    </div>
-    <div> 
-    <input name="FName" type="text" value=""  id='exampleInputName1' required>
-   </div> 
-   <div class="Sname">
- <label>SurName</label>
-    </div>
-    <div> 
-    <input name="SName" type="text" value="" id='exampleInputName2'  required>
-   </div> 
-   <div class= "Uname">
- <label>User Name</label>
-    </div>
-    <div> 
-    <input name="UName" type="text" value=""  id='exampleInputName3'  required>
-   </div> 
-   <div class ="email">
-    <label>Email</label>
-    </div>
+<section id="landing_page">
+  
+  <div class="containers">
+    <h1>Register to My-Diary</h1>
+    <form>
+      <div class = "Fname">
+        <label>First Name</label>
+      </div>
+      <div> 
+        <input name="FName" type="text" value=""  id='exampleInputName1' required>
+      </div> 
+      <div class="Sname">
+        <label>SurName</label>
+      </div>
+      <div> 
+        <input name="SName" type="text" value="" id='exampleInputName2'  required>
+      </div> 
+      <div class= "Uname">
+        <label>User Name</label>
+      </div>
+      <div> 
+        <input name="UName" type="text" value=""  id='exampleInputName3'  required>
+      </div> 
+      <div class ="email">
+        <label>Email</label>
+      </div>
       <div>
         <input name="Email" type="email" value= "" id='exampleInputName4' required>
       </div>
       <div class="password">
-    <label>Password</label>
-   </div> 
-   <div>
-    <input name="p" type="password"  id='exampleInputName5' required>
-   </div>
-  <input type='hidden' name='register' value='1'>
+        <label>Password</label>
+      </div> 
+      <div>
+        <input name="p" type="password"  id='exampleInputName5' required>
+      </div>
+    
 
-  <div class="sub"> <button type="submit" class="button_3">Create</button></div> 
-  <div class="log"><a href="login.html"> Already have an account <br>Sign in!</a></div>
-
- </div>
-</form>
-</div>
+      <div class="sub"> <button type="submit" class="button_3">Create</button></div> 
+      <div class="log"><a href="login.html"> Already have an account <br>Sign in!</a></div>
+    </form>
+  </div>
+</section>
+<section id ="welcome">
+  <div class="inspired">
+    <article>
+      Get inspired and create your own Diary. 
+      Browse new Public Pages. It's intimate and fun.
+    </article> 
+  </div>   
 </section>
 
-<footer>
-<p> My Diary, Copyright &copy; 2018<p>
- </footer>
+  <footer>
+    <p> My Diary, Copyright &copy; 2018<p>
+  </footer>
 </body>
 </html>
