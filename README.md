@@ -1,1 +1,1 @@
-# My-Diary
+# My_Diary
